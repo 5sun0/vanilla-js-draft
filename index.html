@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="start-on">
+        <form class="hidden" id="login-form" autocomplete="off">
+            <input required maxlength="7" type="text" placeholder="NAME" id="input-name" autocomplete="off"/>
+            <button id="login-button">Save</button>
+        </form>
+    
+        <div id="greeting" class="hidden"></div>
+
+        <button id="change-theme">Colorize</button>
+    </div>
+
+
+
+    <div class="wrapper">
+
+        <div class="wrapper-child">
+
+            <div id="clock">
+                <span></span>
+                <br>
+                <span></span>
+            </div>
+
+            <br>
+
+            <div id="weather">
+                <span></span>
+                <br>
+                <span></span>
+            </div>
+            
+            <br>
+
+            <div id="dday-wrapper">
+
+                <div id="dday-submit" class="hidden">
+                    <div id="dday-title">
+                        <input type="text" placeholder="D-Day" required autocomplete="off"/>
+                    </div>
+                    <form id="dday-form" autocomplete="off">
+                        <input type="date" placeholder="yyyy-mm-dd" id="input-year" min="1000-01-01" max="3000-01-01" required autocomplete="off">
+                        <button id="dday-submit-button">Set</button>
+                    </form>
+                </div>
+
+                <div id="dday-painting" class="hidden">
+                    <span></span>
+                    <br>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div id="quotes">
+                <span></span>
+                <br>
+                <span></span>
+            </div>
+        </div>
+
+        
+       
+        <div class="wrapper-child">
+            <form id="todo-form" autocomplete="off">
+                <input type="text" placeholder="TO DO" required id="input-todo" autocomplete="off"/>
+                <button id="todo-button">✔︎</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="wrapper-child">
+            <form id="not-todo-form" autocomplete="off">
+                <input type="text" placeholder="NOT TO DO" required id="input-todo" autocomplete="off"/>
+                <button id="not-todo-button">✔︎</button>
+            </form>
+            <ul id="not-todo-list"></ul>
+        </div>
+
+    </div>
+    
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/dday.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/nottodo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+    
+</body>
+</html>
